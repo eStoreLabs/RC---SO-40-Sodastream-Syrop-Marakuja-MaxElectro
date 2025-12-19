@@ -542,6 +542,18 @@
   margin: 0 auto;
   max-width: 200px;
 }
+.es-vitamins__text--middle {
+  display: none;
+}
+.es-vitamins__text--bottom {
+  display: none;
+}
+.es-vitamins__text--middlem {
+  display: block;
+}
+.es-vitamins__text--bottomm {
+  display: block;
+}
 @media screen and (min-width: 500px) {
   #es-sodastream.es-sodastream .es-triple__wrapper {
     -webkit-flex-wrap: nowrap;
@@ -636,98 +648,13 @@
     .swiper-button-next {
     left: -1%;
   }
-  #es-sodastream.es-sodastream .es-vitamins__content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-  #es-sodastream.es-sodastream .es-vitamins__visual {
-    position: relative;
-    flex: 0 0 auto;
-    order: 2;
-  }
-  #es-sodastream.es-sodastream .es-vitamins__texts {
-    position: relative;
-    width: 100%;
-    padding: 0;
-  }
 
-  #es-sodastream.es-sodastream .es-vitamins__texts--left {
-    order: 1;
-  }
-  #es-sodastream.es-sodastream .es-vitamins__texts--right {
-    order: 3;
-  }
-  #es-sodastream.es-sodastream .es-vitamins__img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    padding: 60px 0;
-  }
-  #es-sodastream.es-sodastream .es-vitamins__badge {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background-color: #e5dcd3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  .es-vitamins__badge--b3 {
-    top: 18%;
-    right: -77px;
-    align-items: start;
-    padding-left: 21px;
-    font-size: 50px !important;
-    transform: scale(1.1);
-  }
-  .es-vitamins__badge--b6 {
-    top: 30%;
-    right: -294px;
-    transform: scale(1.4);
-    align-items: end;
-    padding-right: 18px;
-    font-size: 50px !important;
-  }
-  .es-vitamins__badge--zinc {
-    bottom: 20%;
-    left: -295px;
-    transform: scale(1.6);
-    align-items: start;
-    padding-left: 12px;
-    font-size: 38px !important;
-  }
-  #es-sodastream.es-sodastream .es-vitamins__badge span {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  #es-sodastream.es-sodastream .es-vitamins__text {
-    position: absolute;
-    text-align: left;
-    font-size: 16px;
-  }
-  .es-vitamins__text--top {
-    top: 16%;
-    right: 37%;
-    text-align: right !important;
-  }
-  .es-vitamins__text--middle {
-    top: 23%;
-    left: 50%;
-    text-align: left !important;
-  }
-  .es-vitamins__text--bottom {
-    top: 44%;
-    right: 55%;
-    text-align: right !important;
-  }
-  #es-sodastream.es-sodastream .es-vitamins__footer {
-    margin-top: -20px;
-  }
   #es-sodastream.es-sodastream .es-video__subtitle {
     font-size: 60px;
+  }
+
+  #es-sodastream.es-sodastream .es-video__title {
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 998px) {
@@ -794,14 +721,113 @@
   #es-sodastream.es-sodastream .es-your__text {
     font-size: 20px;
   }
+  #es-sodastream.es-sodastream .es-vitamins__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  #es-sodastream.es-sodastream .es-vitamins__visual {
+    position: relative;
+    flex: 0 0 auto;
+    order: 2;
+  }
+  #es-sodastream.es-sodastream .es-vitamins__texts {
+    position: relative;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  #es-sodastream.es-sodastream .es-vitamins__texts--left {
+    order: 1;
+  }
+  #es-sodastream.es-sodastream .es-vitamins__texts--right {
+    order: 3;
+  }
+  #es-sodastream.es-sodastream .es-vitamins__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 60px 0;
+  }
+  #es-sodastream.es-sodastream .es-vitamins__badge {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #e5dcd3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .es-vitamins__badge--b3 {
+    top: 18%;
+    right: -77px;
+    align-items: start;
+    padding-left: 21px;
+    font-size: 50px !important;
+    transform: scale(1.1);
+  }
+  .es-vitamins__badge--b6 {
+    top: 30%;
+    right: -294px;
+    transform: scale(1.4);
+    align-items: end;
+    padding-right: 18px;
+    font-size: 50px !important;
+  }
+  .es-vitamins__badge--zinc {
+    bottom: 20%;
+    left: -295px;
+    transform: scale(1.6);
+    align-items: start;
+    padding-left: 12px;
+    font-size: 38px !important;
+  }
+  #es-sodastream.es-sodastream .es-vitamins__badge span {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #es-sodastream.es-sodastream .es-vitamins__text {
+    position: absolute;
+    text-align: left;
+    font-size: 16px;
+  }
+  .es-vitamins__text--middlem {
+    display: none;
+  }
+  .es-vitamins__text--bottomm {
+    display: none;
+  }
+  .es-vitamins__text--top {
+    top: 16%;
+    right: 11%;
+    text-align: right !important;
+    width: 28%;
+    display: block;
+  }
+  .es-vitamins__text--middle {
+    display: block;
+    top: 22%;
+    left: 15%;
+    width: 24%;
+    text-align: left !important;
+  }
+  .es-vitamins__text--bottom {
+    display: block;
+    top: 50%;
+    right: 17%;
+    text-align: right !important;
+    width: 22%;
+  }
+  #es-sodastream.es-sodastream .es-vitamins__footer {
+    margin-top: -20px;
+  }
   #es-sodastream.es-sodastream .es-vitamins__title {
     font-size: 36px;
   }
   #es-sodastream.es-sodastream .es-vitamins__text {
     font-size: 20px;
-  }
-  #es-sodastream.es-sodastream .es-video__title {
-    font-size: 36px;
   }
 }
 
